@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+    font-family: minha-fonte;
+}
+
+:root {
+--white: #f1f1f1;
+--white2:#FBFCFC;
+--black: #0D0D0D;
+--beige: #F2CEAE;
+--green: #038C7F;
+--greendark: #03738C;
+--blue: #035AA6;
+}
+
+.error {
+    color: red;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+@font-face {
+    font-family: minha-fonte;
+    src: url('../fonte/Mali-ExtraLight.ttf');
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    padding: 10px;
+    flex: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white2);
+}
+
+.contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato p {
+    flex: 1; 
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.navbar {
+    background-color: var(--white2);
+    padding: 10px;
+    flex: 100%;
+    height: 100px;
+}
+
+.topnav {
+    background-color: var(--blue);
+    background-image: linear-gradient(to bottom right, #F2CEAE , #03738C);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center; 
+}
+  
+.topnav a {
+    display: inline-block;
+    color: var(--beige);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 30px 16px;
+    vertical-align: middle;
+    transition: transform 0.2s ease;
+    font-weight: bolder;
+}
+  
+.topnav a:hover {
+    color: var(--blue);
+    transform: scale(0.9);
+}
+  
+.topnav .icon {
+    display: none;
+}
+
+.topnav img {
+    float: left;
+    width: 130px;
+    height: 80px;
+    margin-right: 10px;
+    filter: drop-shadow(5px 5px 10px rgba(245, 245, 220, 0.5));
+    transition: transform 0.2s ease;
+}
+
+.topnav img:hover {
+    transform: scale(0.9);
+}
+
+.content {
+    background-color: var(--white2);
+    padding: 10px;
+    flex: 100%; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.contents {
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.paragrafo {
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    display: flex;
+    background-color: var(--green);
+    border: 1px solid transparent;
+    border-radius: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    color: var(--beige);
+}
+
+button:hover {
+    transform: scale(1.2);
+    background-color: var(--blue);
+}
+
+.image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 50%;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formulario h1 {
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="date"] {
+    width: 250px;
+    height: 40px;
+    padding: 8px;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: var(--green);
+    color: var(--beige);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--blue);
+}
+
+textarea {
+    height: 150px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--green);
+    text-align: center;
+}
+
+.footer-a {
+    background-color: var(--white2);
+    padding: 10px;
+    flex: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.icon-link {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    flex: 33.33%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.2));
+}
+
+.infos-1 h1 {
+    color: var(--green);
+}
+
+.infos-1 p {
+    color: var(--blue);
+}
+
+.infos-1 {
+    display: block;
+    flex: 33.33%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.whatsapp {
+    display: flex;
+    flex: 33.33%;
+}
+
+.btn-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: var(--beige);
+    color: var(--green);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px var(--smokyblank);
+    z-index: 1000;
+    transition: transform 0.3s; 
+}
+  
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+
+.btn-whatsapp:hover {
+    transform: scale(1.1);
+}
+
+.footer-b {
+    background-color: var(--white2);
+    padding: 10px;
+    flex: 100%;
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.footer-b p {
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--green);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+@media screen and (max-width: 700px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+@media screen and (max-width: 700px) {
+    .flex-container, .header, .content, .navbar, .container, .footer-a, .footer-b {
+        flex: 100%;
+    }
+    .contents,.paragrafo, .image, .formulario{
+        flex: 90%;
+    }
+    .infos-1, .contato {
+        flex: 90%;
+    }
+}

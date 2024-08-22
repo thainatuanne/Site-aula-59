@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <script src="./js/topnav.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>ATIVIDADE PRÁTICA: HTML + CSS + JS</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="header">
+            <div class="contato">
+                <p>(51)999802061</p>
+                <P>E-mail: clinica-vidaanimal@terra.com.br</P>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="contato.html" class="active">Contato</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+                <img src="./img/logo.png" alt="logo">
+            </div>
+        </div>
+        <div class="content">
+            <div class="formulario">
+                <h1>Cadastre seu Pet conosco e ganhe a Microchipagem</h1>
+                <p>É a sua chance de garantir a segurança e o bem-estar do seu melhor amigo, com a tecnologia mais avançada de 
+                    identificação. Não perca essa oportunidade única de oferecer ao seu pet o cuidado que ele merece. 
+                </p>
+                <form id="contact-form" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email">
+                        <span id="emailError" class="error"></span>
+                    </div>
+                    <div>
+                        <label for="phone">Telefone:</label>
+                        <input type="text" id="phone" name="phone">
+                    </div>
+                    <div> 
+                        <label for="name">Endereço:</label>
+                        <input type="text" id="address" name="address">
+                    </div>
+                    <div>
+                        <label for="name">CPF:</label>
+                        <input type="text" id="cpf" name="cpf">
+                        <span id="cpfError" class="error"></span>
+                    </div> 
+                    <div>
+                        <label for="name">Nome do animal:</label>
+                        <input type="text" id="animal" name="cpf">
+                        <span id="animalError" class="error"></span>
+                    </div>
+                    <div>
+                        <label for="name">Espécie:</label>
+                        <input type="text" id="especie" name="cpf">
+                        <span id="especieError" class="error"></span>
+                    </div>
+                    <div>
+                        <label for="name">Raça:</label>
+                        <input type="text" id="raca" name="cpf">
+                        <span id="racaError" class="error"></span>
+                    </div>
+                    <div>
+                        <label for="date">Data de Agendamento:</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div>
+                        <label for="">Mensagem:</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer-a">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo">
+            </div>
+            <div class="infos-1">
+                <h1>Nosso Endereço</h1>
+                <p>Rua Arthur Rondebush, 20</p>
+                <p>Bela Vista - Estância Velha/RS</p>
+            </div>
+            <div class="whatsapp">
+                <a class="btn-whatsapp" href="https://wa.me/51999802051" target="_blank">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-b">
+            <p>© 2024 Vida Animal - Clínica Veterinária - Estância Velha. Todos direitos reservados.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

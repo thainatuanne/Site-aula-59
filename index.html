@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <script src="./js/topnav.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>ATIVIDADE PRÁTICA: HTML + CSS + JS</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="header">
+            <div class="contato">
+                <p>(51)999802061</p>
+                <P>E-mail: clinica-vidaanimal@terra.com.br</P>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Home</a>
+                <a href="contato.html">Contato</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+                <img src="./img/logo.png" alt="logo">
+            </div>
+        </div>
+        <div class="content">
+            <div class="contents">
+                <div class="paragrafo">
+                    <button id="increase-font-1" onclick="increase('content-1')">+</button>
+                    <button id="decrease-font-1" onclick="decrease('content-1')">-</button>
+                    <p id="content-1">Atendimento completo para o cuidado e bem-estar dos seus animais de estimação. Com atendimento 24 
+                        horas, a Vida Animal garante assistência a qualquer momento do dia ou da noite. É equipada com laboratório 
+                        próprio, instalações de cirurgia e internação. Além disso, conta com tecnologia de ponta, como Raio X digital e 
+                        ecografia, para diagnósticos precisos. A saúde do seu pet é essencial, por isso, a clínica conta um programa 
+                        de vacinação eficaz, assegurando a prevenção de doenças e a promoção da saúde animal.
+                    </p>
+                </div>
+                <div class="paragrafo">
+                    <button id="increase-font-2" onclick="increase('content-2')">+</button>
+                    <button id="decrease-font-2" onclick="decrease('content-2')">-</button>
+                    <p id="content-2">A Clínica Veterinária também oferece um serviço inovador de cadastramento e microchipagem para seu pet. 
+                    </p>
+                </div>
+                <div class="paragrafo">
+                    <button id="increase-font-3" onclick="increase('content-3')">+</button>
+                    <button id="decrease-font-3" onclick="decrease('content-3')">-</button>
+                    <p id="content-3">Com essa tecnologia, cada animal recebe um microchip único, que é associado a um número de 
+                        identificação (ID). Em caso de perda, o ID permite rastrear e recuperar seu amigo de quatro patas com rapidez 
+                        e segurança. Esse método não só aumenta as chances de reencontro como também é uma forma eficaz de manter 
+                        atualizadas as informações de saúde e vacinação do animal.
+                    </p> 
+                </div>
+                <div class="image">
+                    <img id="image-pet" src="./img/img-content1.png" alt="image-1" onmouseover = "changeImage()" onmouseout="restoreImage()">
+                </div>
+            </div>
+        </div>
+        <div class="footer-a">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo">
+            </div>
+            <div class="infos-1">
+                <h1>Nosso Endereço</h1>
+                <p>Rua Arthur Rondebush, 20</p>
+                <p>Bela Vista - Estância Velha/RS</p>
+            </div>
+            <div class="whatsapp">
+                <a class="btn-whatsapp" href="https://wa.me/51999802051" target="_blank">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-b">
+            <p>© 2024 Vida Animal - Clínica Veterinária - Estância Velha. Todos direitos reservados.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
